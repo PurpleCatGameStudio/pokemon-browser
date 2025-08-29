@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Lista de Pokémon
-    const pokemonList = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle", "Eevee"];
+    const pokemonList = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle"];
     const spinBtn = document.getElementById("spinBtn");
     const result = document.getElementById("result");
 
