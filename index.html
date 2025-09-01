@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Roulette</title>
-    <link rel="stylesheet" href="style.css?v=1.0">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Pokémon Adventure</title>
+  <link rel="stylesheet" href="style.css?v=1.0"/>
 </head>
 <body>
-    <h1>🎲 Pokémon Browser Test 🎲</h1>
+  <header>
+    <h1>Pokémon Adventure</h1>
+  </header>
 
-    <!-- Botões de idioma -->
-    <div id="langButtons">
-        <button id="ptBtn">🇧🇷 Português</button>
-        <button id="enBtn">🇬🇧 English</button>
+  <main>
+    <section id="screen-gen" class="screen"></section>
+    <section id="screen-gender" class="screen"></section>
+    <section id="screen-starter" class="screen"></section>
+    <section id="screen-shiny" class="screen"></section>
+    <section id="screen-final" class="screen"></section>
+  </main>
+
+  <aside id="sidebar">
+    <div class="sidebar-card">
+      <div class="pokemon-info">
+        <div id="body-sprite"></div>
+        <div class="badges-grid">
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+          <div class="badge-slot"></div>
+        </div>
+      </div>
     </div>
 
-    <!-- Mensagem de anúncio -->
-    <p id="announcement">Bem-vindo ao Pokémon Browser! Em breve você poderá jogar uma versão completa e divertida do jogo.</p>
+    <div class="sidebar-card">
+      <h3>Team</h3>
+      <div id="team-grid" class="grid-team" aria-live="polite"></div>
+    </div>
 
-    <!-- Botão da roleta -->
-    <button id="spinBtn">Girar Roleta</button>
-    <p id="result"></p>
+    <div class="sidebar-card">
+      <h3>Bag</h3>
+      <div id="bag-grid" class="grid-bag" aria-live="polite"></div>
+    </div>
+  </aside>
 
-    <script src="app.js?v=1.0"></script>
+  <audio id="tick-sound" src="assets/sounds/tick.mp3" preload="auto"></audio>
+  <audio id="shiny-sound" src="assets/sounds/shiny.mp3" preload="auto"></audio>
+
+  <script src="app.js?v=1.0"></script>
 </body>
 </html>
