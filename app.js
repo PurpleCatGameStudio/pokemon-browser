@@ -306,11 +306,19 @@ function showShinyScreen() {
       draw(currentRotation);
 
       const idx = sliceIndexAtPointer(currentRotation);
-      if(idx!==lastTickIndex){
-        lastTickIndex=idx;
-        try{ tick.currentTime=0; tick.play(); }catch(e){}
-      }
+      if(idx !== lastTickIndex){
+        lastTickIndex = idx;
+        try { tick.currentTime = 0; tick.play(); } catch(e){}
 
+        const pointer = document.getElementById("pointer");
+        if(pointer){
+          pointer.style.transform = "translateX(-50%) rotate(-20deg)";
+          setTimeout(() => {
+            pointer.style.transform = "translateX(-50%) rotate(0deg)";
+          }, 100);
+        }
+      }
+      
       if(t<1) requestAnimationFrame(step);
       else {
         spinning=false;

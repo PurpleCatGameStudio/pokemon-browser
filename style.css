@@ -201,15 +201,18 @@ button.primary{ background:var(--accent); color:#fff; border:none; }
   px;
 }
 
-#pointer{
-  position:absolute;
-  width:0; height:0;
-  border-left:12px solid transparent;
-  border-right:12px solid transparent;
-  border-top:22px solid rgb(228, 56, 56);
-  top:0;
-  left:50%;
-  transform:translateX(-50%);
+#pointer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 22px solid rgb(228, 56, 56);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  transform-origin: center top;
+  transition: transform 0.1s ease-out;
 }
 
 #language-toggle {
