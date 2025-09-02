@@ -13,6 +13,31 @@ const STARTERS = [
   { name: "Squirtle", id: 7 }
 ];
 
+const texts = {
+  en: {
+    genTitle: "Choose Generation",
+    gen1: "Generation 1 (Kanto)",
+    genderTitle: "What is your gender?",
+    starterTitle: "Professor Oak: Choose your starter Pokémon",
+    shinyTitle: "Shiny Roulette",
+    finalTitle: "End of test version!",
+    finalText: "More content coming soon, stay tuned.",
+    restart: "Restart"
+  },
+  pt: {
+    genTitle: "Escolha a Geração",
+    gen1: "Geração 1 (Kanto)",
+    genderTitle: "Qual é o seu gênero?",
+    starterTitle: "Professor Oak: Escolha seu Pokémon inicial",
+    shinyTitle: "Roleta de Shiny",
+    finalTitle: "Fim da versão teste!",
+    finalText: "Em breve mais conteúdo, continue acompanhando.",
+    restart: "Reiniciar"
+  }
+};
+
+let currentLang = "en";
+
 /* ---------------------------
    HELPERS UI
 --------------------------- */
@@ -77,12 +102,40 @@ function updateBodySprite() {
   }
 }
 
+function updateTexts() {
+  // Geração
+  const genBtn = document.getElementById("gen1Btn");
+  if (genBtn) genBtn.textContent = texts[currentLang].gen1;
+  const genTitle = document.querySelector("#screen-gen h2");
+  if (genTitle) genTitle.textContent = texts[currentLang].genTitle;
+
+  // Gênero
+  const genderTitle = document.querySelector("#screen-gender h2");
+  if (genderTitle) genderTitle.textContent = texts[currentLang].genderTitle;
+
+  // Starter
+  const starterTitle = document.querySelector("#screen-starter h2");
+  if (starterTitle) starterTitle.textContent = texts[currentLang].starterTitle;
+
+  // Shiny
+  const shinyTitle = document.querySelector("#screen-shiny h2");
+  if (shinyTitle) shinyTitle.textContent = texts[currentLang].shinyTitle;
+
+  // Final
+  const finalTitle = document.querySelector("#screen-final h2");
+  if (finalTitle) finalTitle.textContent = texts[currentLang].finalTitle;
+  const finalText = document.querySelector("#screen-final p");
+  if (finalText) finalText.textContent = texts[currentLang].finalText;
+  const restartBtn = document.querySelector("#screen-final button");
+  if (restartBtn) restartBtn.textContent = texts[currentLang].restart;
+}
+
 /* ---------------------------
    TELAS
 --------------------------- */
 function initGenScreen(){
   const el=document.getElementById("screen-gen");
-  el.innerHTML=`<h2>Escolha a Geração</h2><p class="muted">Por enquanto: apenas Geração 1</p><button id="gen1Btn" class="primary">Geração 1 (Kanto)</button>`;
+  el.innerHTML=`<h2>${texts[currentLang].genTitle}</h2><button id="gen1Btn" class="primary">${texts[currentLang].gen1}</button>`;
   document.getElementById("gen1Btn").addEventListener("click",()=>{
     GameState.currentGen=1;
     showGenderScreen();
@@ -93,7 +146,7 @@ function initGenScreen(){
 
 function showGenderScreen() {
   const el = document.getElementById("screen-gender");
-  el.innerHTML = `<h2>Qual é o seu gênero?</h2><div class="row" id="gender-row"></div>`;
+  el.innerHTML = `<h2>${texts[currentLang].genderTitle}</h2><div class="row" id="gender-row"></div>`;
   showScreen("screen-gender");
 
   const row = document.getElementById("gender-row");
@@ -119,13 +172,13 @@ function showGenderScreen() {
 
 function showStarterScreen() {
   const el = document.getElementById("screen-starter");
-  el.innerHTML = `<h2>Professor Oak: Escolha seu Pokémon inicial</h2><div class="row" id="starters-row"></div>`;
+  el.innerHTML = `<h2>${texts[currentLang].starterTitle}</h2><div class="row" id="starters-row"></div>`;
   const row = document.getElementById("starters-row");
   STARTERS.forEach(s => {
     const card = document.createElement("div"); card.className="card";
     const img = document.createElement("img"); img.src=`sprites/pokemon/${s.id}.png`; img.alt=s.name;
     const title = document.createElement("div"); title.className="title"; title.textContent=s.name;
-    const btn = document.createElement("button"); btn.textContent="Escolher";
+    const btn = document.createElement("button"); btn.textContent=currentLang==="pt"?"Escolher":"Choose";
     btn.addEventListener("click",()=>{
       GameState.starter=s;
       showShinyScreen();
@@ -142,11 +195,11 @@ function showStarterScreen() {
 function showShinyScreen() {
   const el = document.getElementById("screen-shiny");
   el.innerHTML = `
-    <h2>Roleta de Shiny</h2>
+    <h2>${texts[currentLang].shinyTitle}</h2>
     <div id="roulette-wrapper" style="position:relative;">
       <canvas id="roulette-canvas" width="400" height="400"></canvas>
       <div id="pointer" aria-hidden="true"></div>
-      <button id="spinBtn" class="primary">Girar Roleta</button>
+      <button id="spinBtn" class="primary">${currentLang==="pt"?"Girar Roleta":"Spin Roulette"}</button>
     </div>
   `;
   showScreen("screen-shiny");
@@ -159,7 +212,7 @@ function showShinyScreen() {
   slices.forEach(sl => sl.perc = Math.round((sl.weight / totalWeight) * 100) + "%");
 
   let start = -Math.PI / 2;
-  for (let sl of slices) {
+  for (let sl of slices){
     const angle = (sl.weight / totalWeight) * 2 * Math.PI;
     sl.start = start;
     sl.end = start + angle;
@@ -274,7 +327,7 @@ function showShinyScreen() {
   }
 
   draw(0);
-    document.getElementById("spinBtn").addEventListener("click", spin);
+  document.getElementById("spinBtn").addEventListener("click", spin);
 }
 
 /* ---------------------------
@@ -283,12 +336,24 @@ function showShinyScreen() {
 function showFinalScreen() {
   const el = document.getElementById("screen-final");
   el.innerHTML = `
-    <h2>Fim da versão teste!</h2>
-    <p>Em breve mais conteúdo, continue acompanhando.</p>
-    <button class="primary" onclick="location.reload()">Reiniciar</button>
+    <h2>${texts[currentLang].finalTitle}</h2>
+    <p>${texts[currentLang].finalText}</p>
+    <button class="primary" onclick="location.reload()">${texts[currentLang].restart}</button>
   `;
   showScreen("screen-final");
 }
+
+/* ---------------------------
+   LANGUAGE TOGGLE
+--------------------------- */
+const langToggle = document.getElementById("language-toggle");
+const langFlag = document.getElementById("lang-flag");
+
+langToggle?.addEventListener("click", () => {
+  currentLang = currentLang === "pt" ? "en" : "pt";
+  langFlag.src = currentLang === "pt" ? "assets/ui/brLanguage.png" : "assets/ui/enLanguage.png";
+  updateTexts();
+});
 
 /* ---------------------------
    BOOT
