@@ -25,34 +25,51 @@ for (const species of genJson.pokemon_species) {
   const name = species.name;
   try {
     console.log("Downloading:", name);
-    // pokemon details (includes id and sprites)
+    
+    // Pokémon details (includes id and sprites)
     const pRes = await fetch(`${POKE_BASE}/pokemon/${name}`);
     if (!pRes.ok) { console.warn("skip pokemon:", name); continue; }
     const pJson = await pRes.json();
     await fs.writeFile(path.join(OUT_POKEMON, `${name}.json`), JSON.stringify(pJson, null, 2));
 
-    // encounters (may be empty array)
+    // Encounters (may be empty array)
     const eRes = await fetch(`${POKE_BASE}/pokemon/${name}/encounters`);
     if (eRes.ok) {
       const eJson = await eRes.json();
       await fs.writeFile(path.join(OUT_ENCOUNTERS, `${name}.json`), JSON.stringify(eJson, null, 2));
     }
 
-    // download sprite (front_default preferred, fallback to official artwork)
-    const spriteUrl = pJson.sprites.front_default
+    // --- Download normal sprite ---
+    const normalSpriteUrl = pJson.sprites.front_default
       || (pJson.sprites.other && pJson.sprites.other["official-artwork"] && pJson.sprites.other["official-artwork"].front_default);
 
-    if (spriteUrl) {
-      const imgRes = await fetch(spriteUrl);
+    if (normalSpriteUrl) {
+      const imgRes = await fetch(normalSpriteUrl);
       if (imgRes.ok) {
         const arrayBuffer = await imgRes.arrayBuffer();
         await fs.writeFile(path.join(OUT_SPRITES, `${pJson.id}.png`), Buffer.from(arrayBuffer));
       } else {
-        console.warn("sprite not found for", name);
+        console.warn("Normal sprite not found for", name);
       }
     }
+
+    // --- Download shiny sprite ---
+    const shinySpriteUrl = pJson.sprites.front_shiny
+      || (pJson.sprites.other && pJson.sprites.other["official-artwork"] && pJson.sprites.other["official-artwork"].front_default);
+
+    if (shinySpriteUrl) {
+      const imgRes = await fetch(shinySpriteUrl);
+      if (imgRes.ok) {
+        const arrayBuffer = await imgRes.arrayBuffer();
+        await fs.writeFile(path.join(OUT_SPRITES, `${pJson.id}_shiny.png`), Buffer.from(arrayBuffer));
+      } else {
+        console.warn("Shiny sprite not found for", name);
+      }
+    }
+
   } catch (err) {
-    console.error("error for", name, err);
+    console.error("Error for", name, err);
   }
 }
+
 console.log("Done. Check /data and /sprites/pokemon");

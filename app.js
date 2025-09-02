@@ -83,9 +83,10 @@ function renderTeamAndBag() {
     if (party[i]) {
       const p = party[i];
       const img = document.createElement("img");
-      img.src = `sprites/pokemon/${p.id}.png`;
+      img.src = p.shiny 
+        ? `sprites/pokemon/${p.id}_shiny.png`
+        : `sprites/pokemon/${p.id}.png`;
       img.alt = p.name;
-      if (p.shiny) img.style.filter = "hue-rotate(110deg) saturate(180%)";
       slot.appendChild(img);
     } else { slot.classList.add("empty"); }
     teamGrid.appendChild(slot);
