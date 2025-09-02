@@ -22,7 +22,9 @@ const texts = {
     shinyTitle: "Shiny Roulette",
     finalTitle: "End of test version!",
     finalText: "More content coming soon, stay tuned.",
-    restart: "Restart"
+    restart: "Restart",
+    yes: "Yes",
+    no: "No"
   },
   pt: {
     genTitle: "Escolha a Geração",
@@ -32,7 +34,9 @@ const texts = {
     shinyTitle: "Roleta de Shiny",
     finalTitle: "Fim da versão teste!",
     finalText: "Em breve mais conteúdo, continue acompanhando.",
-    restart: "Reiniciar"
+    restart: "Reiniciar",
+    yes: "Sim",
+    no: "Não"
   }
 };
 
@@ -205,8 +209,8 @@ function showShinyScreen() {
   showScreen("screen-shiny");
 
   const slices = [
-    { label: "Shiny", weight: 50, color: "#f0c040" },
-    { label: "Normal", weight: 50, color: "#cfd8dc" }
+    { label: "Shiny", weight: 1, color: "#f0c040" },
+    { label: "Normal", weight: 99, color: "#cfd8dc" }
   ];
   const totalWeight = slices.reduce((s, x) => s + x.weight, 0);
   slices.forEach(sl => sl.perc = Math.round((sl.weight / totalWeight) * 100) + "%");
@@ -225,37 +229,59 @@ function showShinyScreen() {
   const center = canvas.width/2;
   const radius = center-12;
 
-  function draw(rotationRad=0){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    for(let sl of slices){
-      ctx.beginPath();
-      ctx.moveTo(center,center);
-      ctx.arc(center,center,radius,sl.start+rotationRad,sl.end+rotationRad);
-      ctx.closePath();
-      ctx.fillStyle=sl.color;
-      ctx.fill();
-      ctx.strokeStyle="#333";
-      ctx.lineWidth=2;
-      ctx.stroke();
+  function draw(rotationRad = 0) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      const mid=sl.mid+rotationRad;
-      ctx.save();
-      ctx.translate(center,center);
-      ctx.rotate(mid);
-      ctx.textAlign="right";
-      ctx.fillStyle="#222";
-      ctx.font="bold 8px Arial";
-      ctx.fillText(sl.perc,radius-10,3);
-      ctx.restore();
+  for (let sl of slices) {
+    ctx.beginPath();
+    ctx.moveTo(center, center);
+    ctx.arc(center, center, radius, sl.start + rotationRad, sl.end + rotationRad);
+    ctx.closePath();
+    ctx.fillStyle = sl.color;
+    ctx.fill();
+    ctx.strokeStyle = "#333";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    const midRot = sl.mid + rotationRad; 
+    const textRadius = radius - 14; 
+    const x = center + textRadius * Math.cos(midRot);
+    const y = center + textRadius * Math.sin(midRot);
+
+    ctx.save();
+    ctx.translate(x, y);
+
+    let angleForText = midRot;
+    angleForText = (angleForText + 2 * Math.PI) % (2 * Math.PI);
+    if (angleForText > Math.PI / 2 && angleForText < 3 * Math.PI / 2) {
+      ctx.rotate(midRot + Math.PI);
+    } else {
+      ctx.rotate(midRot);
     }
 
-    ctx.beginPath();
-    ctx.arc(center,center,40,0,Math.PI*2);
-    ctx.fillStyle="#fff";
-    ctx.fill();
-    ctx.strokeStyle="#ddd";
-    ctx.stroke();
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillStyle = "#222";
+    ctx.font = "12px Arial";
+
+    const labelToShow =
+      (sl.label === "Yes" || sl.label === "Shiny") ? texts[currentLang].yes
+      : (sl.label === "No"  || sl.label === "Normal") ? texts[currentLang].no
+      : sl.label;
+
+    ctx.fillText(labelToShow, 0, 0);
+    ctx.restore();
   }
+
+  ctx.beginPath();
+  ctx.arc(center, center, 40, 0, Math.PI * 2);
+  ctx.fillStyle = "#fff";
+  ctx.fill();
+  ctx.strokeStyle = "#ddd";
+  ctx.stroke();
+}
+
+
 
   const tick = document.getElementById("tick-sound");
   const shinySound = document.getElementById("shiny-sound");
