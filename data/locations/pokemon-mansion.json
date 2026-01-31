@@ -1,0 +1,742 @@
+{
+  "id": "pokemon-mansion",
+  "name": {
+    "en": "Pokémon Mansion",
+    "pt": "Pokémon Mansion"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "rattata",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 20
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 20
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 10
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 10
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 10
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 4
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 1
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 15
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 15
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 5
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 1
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 4
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 20
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 4
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 1
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 20
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 20
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 20
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 20
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 15
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 15
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 10
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 5
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 4
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 1
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 20
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 15
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 20
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 20
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 10
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 20
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 20
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 4
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 4
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 15
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 15
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 10
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 5
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 1
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 5
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 4
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 1
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 15
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 5
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 5
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 1
+      },
+      {
+        "pokemon": "magmar",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 15
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 46,
+        "maxLevel": 46,
+        "chance": 5
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 15
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 15
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 5
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "ponyta",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 20
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 20
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 1
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 10
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 20
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "koffing",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 5
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 4
+      },
+      {
+        "pokemon": "weezing",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 1
+      },
+      {
+        "pokemon": "magmar",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 4
+      },
+      {
+        "pokemon": "ditto",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "ditto",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 4
+      },
+      {
+        "pokemon": "ditto",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 1
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

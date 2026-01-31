@@ -1,0 +1,582 @@
+{
+  "id": "kanto-victory-road-2",
+  "name": {
+    "en": "Victory Road",
+    "pt": "Victory Road"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "zubat",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 44,
+        "maxLevel": 44,
+        "chance": 10
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 4
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 4
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 15
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 10
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 4
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 47,
+        "maxLevel": 47,
+        "chance": 1
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 5
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 5
+      },
+      {
+        "pokemon": "marowak",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 1
+      },
+      {
+        "pokemon": "marowak",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 1
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 44,
+        "maxLevel": 44,
+        "chance": 10
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 10
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 1
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 15
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 1
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 1
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 44,
+        "maxLevel": 44,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 5
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 47,
+        "maxLevel": 47,
+        "chance": 5
+      },
+      {
+        "pokemon": "marowak",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 4
+      },
+      {
+        "pokemon": "marowak",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 4
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 44,
+        "maxLevel": 44,
+        "chance": 20
+      },
+      {
+        "pokemon": "venomoth",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "venomoth",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 4
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 1
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 4
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 1
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 5
+      },
+      {
+        "pokemon": "machoke",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 5
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 15
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 46,
+        "maxLevel": 46,
+        "chance": 10
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 5
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 5
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 41,
+        "maxLevel": 41,
+        "chance": 10
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 47,
+        "maxLevel": 47,
+        "chance": 4
+      },
+      {
+        "pokemon": "graveler",
+        "minLevel": 47,
+        "maxLevel": 47,
+        "chance": 1
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 42,
+        "maxLevel": 42,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 10
+      },
+      {
+        "pokemon": "onix",
+        "minLevel": 49,
+        "maxLevel": 49,
+        "chance": 10
+      }
+    ],
+    "only-one": [
+      {
+        "pokemon": "moltres",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      },
+      {
+        "pokemon": "moltres",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      },
+      {
+        "pokemon": "moltres",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

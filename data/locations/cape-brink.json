@@ -1,0 +1,19 @@
+{
+  "id": "cape-brink",
+  "name": {
+    "en": "Cape Brink",
+    "pt": "Cape Brink"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

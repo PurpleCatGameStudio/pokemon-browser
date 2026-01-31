@@ -1,0 +1,1370 @@
+{
+  "id": "seafoam-islands",
+  "name": {
+    "en": "Seafoam Islands",
+    "pt": "Seafoam Islands"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "zubat",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 4
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 1
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "golduck",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 1
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "slowbro",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 1
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 15
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 4
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 15
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 15
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 4
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 1
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 4
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 4
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 15
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "seadra",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 15
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 4
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 4
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 5
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "golduck",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 4
+      },
+      {
+        "pokemon": "slowbro",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "slowbro",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 1
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 15
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 15
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 20
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 5
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 20
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 15
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 15
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 4
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 1
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 15
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "seadra",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 45,
+        "maxLevel": 45,
+        "chance": 5
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 1
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 1
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "golbat",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 5
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 10
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "golduck",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 10
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "slowbro",
+        "minLevel": 39,
+        "maxLevel": 39,
+        "chance": 4
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "seel",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 4
+      },
+      {
+        "pokemon": "dewgong",
+        "minLevel": 34,
+        "maxLevel": 34,
+        "chance": 1
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 15
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 15
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 15
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 20
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      }
+    ],
+    "good-rod": [
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      }
+    ],
+    "surf": [
+      {
+        "pokemon": "tentacool",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 15
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 10
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 5
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 4
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 1
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 15
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 10
+      },
+      {
+        "pokemon": "tentacool",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 5
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 4
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 1
+      }
+    ],
+    "super-rod": [
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 40
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 20
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 30
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "shellder",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 40
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 20
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 30
+      },
+      {
+        "pokemon": "staryu",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 10
+      }
+    ],
+    "old-rod": [
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      }
+    ],
+    "only-one": [
+      {
+        "pokemon": "articuno",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      },
+      {
+        "pokemon": "articuno",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      },
+      {
+        "pokemon": "articuno",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

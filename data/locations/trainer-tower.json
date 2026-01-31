@@ -1,0 +1,19 @@
+{
+  "id": "trainer-tower",
+  "name": {
+    "en": "Trainer Tower",
+    "pt": "Trainer Tower"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

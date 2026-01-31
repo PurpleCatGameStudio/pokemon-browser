@@ -1,0 +1,76 @@
+{
+  "id": "saffron-city",
+  "name": {
+    "en": "Saffron City",
+    "pt": "Saffron City"
+  },
+  "type": "city",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "gift": [
+      {
+        "pokemon": "hitmonlee",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "hitmonlee",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "hitmonlee",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "hitmonchan",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "hitmonchan",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "hitmonchan",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "lapras",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 100
+      },
+      {
+        "pokemon": "lapras",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 100
+      },
+      {
+        "pokemon": "lapras",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

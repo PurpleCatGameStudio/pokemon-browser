@@ -1,0 +1,196 @@
+{
+  "id": "celadon-city",
+  "name": {
+    "en": "Celadon City",
+    "pt": "Celadon City"
+  },
+  "type": "city",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "good-rod": [
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      }
+    ],
+    "super-rod": [
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 25
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 8
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 17
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 25
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 8
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 17
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 40
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 30
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 20
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      }
+    ],
+    "old-rod": [
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      }
+    ],
+    "gift": [
+      {
+        "pokemon": "eevee",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 100
+      },
+      {
+        "pokemon": "eevee",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 100
+      },
+      {
+        "pokemon": "eevee",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

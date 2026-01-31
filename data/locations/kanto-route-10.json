@@ -1,0 +1,358 @@
+{
+  "id": "kanto-route-10",
+  "name": {
+    "en": "Route 10",
+    "pt": "Route 10"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "rattata",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 10
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 5
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 10
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 5
+      },
+      {
+        "pokemon": "ekans",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "ekans",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "ekans",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 4
+      },
+      {
+        "pokemon": "ekans",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 1
+      },
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 4
+      },
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 1
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 10
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 4
+      },
+      {
+        "pokemon": "machop",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 1
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 20
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 15
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 20
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 14,
+        "maxLevel": 14,
+        "chance": 15
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 5
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 20
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 14,
+        "maxLevel": 14,
+        "chance": 15
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 5
+      }
+    ],
+    "good-rod": [
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      }
+    ],
+    "super-rod": [
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 25
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 8
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 17
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 25
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 8
+      },
+      {
+        "pokemon": "poliwhirl",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 17
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 40
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 30
+      },
+      {
+        "pokemon": "kingler",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "horsea",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 20
+      }
+    ],
+    "old-rod": [
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

@@ -1,0 +1,202 @@
+{
+  "id": "kanto-route-1",
+  "name": {
+    "en": "Route 1",
+    "pt": "Route 1"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 2,
+        "maxLevel": 2,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 5
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 4
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 1
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 2,
+        "maxLevel": 2,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 5
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 4
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 1
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 2,
+        "maxLevel": 2,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 5
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 4
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 1
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 20
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 15
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 2,
+        "maxLevel": 2,
+        "chance": 10
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 5
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 20
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 15
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 2,
+        "maxLevel": 2,
+        "chance": 10
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 5
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 2,
+        "maxLevel": 2,
+        "chance": 15
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 10
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 5
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

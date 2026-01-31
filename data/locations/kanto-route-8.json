@@ -1,0 +1,202 @@
+{
+  "id": "kanto-route-8",
+  "name": {
+    "en": "Route 8",
+    "pt": "Route 8"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "pidgey",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "pidgeotto",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 15
+      },
+      {
+        "pokemon": "ekans",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 15
+      },
+      {
+        "pokemon": "ekans",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 5
+      },
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 15
+      },
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 5
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 10
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 5
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 4
+      },
+      {
+        "pokemon": "vulpix",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 1
+      },
+      {
+        "pokemon": "jigglypuff",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 5
+      },
+      {
+        "pokemon": "jigglypuff",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "meowth",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "meowth",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "mankey",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "mankey",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 10
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 5
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 4
+      },
+      {
+        "pokemon": "growlithe",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 1
+      },
+      {
+        "pokemon": "abra",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "abra",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "kadabra",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 4
+      },
+      {
+        "pokemon": "kadabra",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 1
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

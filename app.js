@@ -1,10 +1,20 @@
-/* ---------------------------
-   CONFIGURAÇÃO / ESTADO
---------------------------- */
+/* ===========================
+   GAME STATE
+=========================== */
 const GameState = {
   currentGen: null,
-  starter: null,
-  player: { gender: null, party: [], items: [] }
+
+  player: {
+    gender: null,
+    party: [],
+    items: []
+  },
+
+  // 🔥 ADICIONADO (NAVEGAÇÃO)
+  world: {
+    currentLocationId: null,
+    visited: new Set()
+  }
 };
 
 const STARTERS = [
@@ -13,6 +23,9 @@ const STARTERS = [
   { name: "Squirtle", id: 7 }
 ];
 
+/* ===========================
+   TEXTS / LANG
+=========================== */
 const texts = {
   en: {
     genTitle: "Choose Generation",
@@ -25,7 +38,17 @@ const texts = {
     restart: "Restart",
     yes: "Yes",
     no: "No",
-    spin: "Spin"
+    spin: "Spin",
+    choose: "Choose",
+
+    // 🔥 NAVEGAÇÃO
+    wild: "Wild Pokémon",
+    fishing: "Fishing",
+    gym: "Gym",
+    pokecenter: "PokéCenter",
+    pokemart: "PokéMart",
+    move: "Go to another area",
+    where: "Where do you want to go?"
   },
   pt: {
     genTitle: "Escolha a Geração",
@@ -38,330 +61,425 @@ const texts = {
     restart: "Reiniciar",
     yes: "Sim",
     no: "Não",
-    spin: "Girar"
+    spin: "Girar",
+    choose: "Escolher",
+
+    // 🔥 NAVEGAÇÃO
+    wild: "Pokémon Selvagens",
+    fishing: "Pescar",
+    gym: "Ginásio",
+    pokecenter: "PokéCenter",
+    pokemart: "PokéMart",
+    move: "Ir para outra área",
+    where: "Para onde ir?"
   }
 };
 
 let currentLang = "en";
 
-/* ---------------------------
-   sessionStorage helpers
---------------------------- */
+/* ===========================
+   LANGUAGE STORAGE
+=========================== */
 function setLanguage(lang) {
-  try {
-    sessionStorage.setItem("preferredLanguage", lang);
-  } catch (e) {
-    /* ignore storage errors */
-  }
+  try { sessionStorage.setItem("preferredLanguage", lang); } catch (_) {}
   currentLang = lang;
 }
 
 function getLanguage() {
-  try {
-    return sessionStorage.getItem("preferredLanguage") || "en";
-  } catch (e) {
-    return "en";
-  }
+  try { return sessionStorage.getItem("preferredLanguage") || "en"; }
+  catch (_) { return "en"; }
 }
 
-/* ---------------------------
-   HELPERS UI
---------------------------- */
-function showScreen(id){
-  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
+/* ===========================
+   SCREENS / FLOW
+=========================== */
+const Screens = {
+  GEN: "screen-gen",
+  GENDER: "screen-gender",
+  STARTER: "screen-starter",
+  FINAL: "screen-final",
+  LOCATION: "screen-location-actions" // 🔥 NOVA
+};
+
+const ScreenFlow = {
+  current: null,
+
+  go(screen) {
+    if (!screen) screen = Screens.GEN;
+    this.current = screen;
+    showScreen(screen);
+
+    switch (screen) {
+      case Screens.GEN: renderGenScreen(); break;
+      case Screens.GENDER: renderGenderScreen(); break;
+      case Screens.STARTER: renderStarterScreen(); break;
+      case Screens.FINAL: renderFinalScreen(); break;
+    }
+  }
+};
+
+/* ===========================
+   UI HELPERS
+=========================== */
+function showScreen(id) {
+  document.querySelectorAll(".screen")
+    .forEach(s => s.classList.remove("active"));
   document.getElementById(id)?.classList.add("active");
 }
 
 function renderTeamAndBag() {
   const teamGrid = document.getElementById("team-grid");
   if (!teamGrid) return;
+
   teamGrid.innerHTML = "";
-  const party = GameState.player.party || [];
   for (let i = 0; i < 6; i++) {
     const slot = document.createElement("div");
     slot.className = "slot";
-    if (party[i]) {
-      const p = party[i];
+
+    const p = GameState.player.party[i];
+    if (p) {
       const img = document.createElement("img");
-      img.src = p.shiny 
+      img.src = p.shiny
         ? `sprites/pokemon/${p.id}_shiny.png`
         : `sprites/pokemon/${p.id}.png`;
-      img.alt = p.name;
       slot.appendChild(img);
-    } else { slot.classList.add("empty"); }
-    teamGrid.appendChild(slot);
-  }
+    } else {
+      slot.classList.add("empty");
+    }
 
-  const bagGrid = document.getElementById("bag-grid");
-  if (!bagGrid) return;
-  bagGrid.innerHTML = "";
-  const items = GameState.player.items || [];
-  for (let i = 0; i < 12; i++) {
-    const slot = document.createElement("div");
-    slot.className = "slot";
-    if (items[i]) {
-      const it = items[i];
-      if (it.icon) {
-        const img = document.createElement("img");
-        img.src = it.icon;
-        img.alt = it.name;
-        slot.appendChild(img);
-      } else { slot.textContent = it.name; }
-      const name = document.createElement("div");
-      name.className = "slot-name";
-      name.textContent = it.name;
-      slot.appendChild(name);
-      slot.title = it.name;
-    } else { slot.classList.add("empty"); }
-    bagGrid.appendChild(slot);
+    teamGrid.appendChild(slot);
   }
 }
 
 function updateBodySprite() {
   const el = document.getElementById("body-sprite");
   if (!el) return;
+
   el.innerHTML = "";
-  if(GameState.player.gender){
+  if (GameState.player.gender) {
     const img = document.createElement("img");
     img.src = `sprites/gender/${GameState.player.gender}.png`;
-    img.alt = GameState.player.gender;
-    img.style.width="80px";
-    img.style.height="80px";
-    img.style.objectFit="contain";
+    img.style.width = "80px";
+    img.style.height = "80px";
     el.appendChild(img);
   }
 }
 
-function updateTexts() {
-  // Geração
-  const genBtn = document.getElementById("gen1Btn");
-  if (genBtn) genBtn.textContent = texts[currentLang].gen1;
-  const genTitle = document.querySelector("#screen-gen h2");
-  if (genTitle) genTitle.textContent = texts[currentLang].genTitle;
+/* ===========================
+   RESET
+=========================== */
+function resetGameState() {
+  GameState.currentGen = null;
+  GameState.player.gender = null;
+  GameState.player.party.length = 0;
+  GameState.player.items.length = 0;
 
-  // Gênero
-  const genderTitle = document.querySelector("#screen-gender h2");
-  if (genderTitle) genderTitle.textContent = texts[currentLang].genderTitle;
+  GameState.world.currentLocationId = null;
+  GameState.world.visited.clear();
 
-  // Starter
-  const starterTitle = document.querySelector("#screen-starter h2");
-  if (starterTitle) starterTitle.textContent = texts[currentLang].starterTitle;
-
-  // Shiny (if open)
-  const shinyTitle = document.querySelector("#screen-shiny h2");
-  if (shinyTitle) shinyTitle.textContent = texts[currentLang].shinyTitle;
-
-  // Final
-  const finalTitle = document.querySelector("#screen-final h2");
-  if (finalTitle) finalTitle.textContent = texts[currentLang].finalTitle;
-  const finalText = document.querySelector("#screen-final p");
-  if (finalText) finalText.textContent = texts[currentLang].finalText;
-  const restartBtn = document.querySelector("#screen-final button");
-  if (restartBtn) restartBtn.textContent = texts[currentLang].restart;
-}
-
-/* ---------------------------
-   TELAS
---------------------------- */
-function initGenScreen(){
-  const el=document.getElementById("screen-gen");
-  if(!el) return;
-  el.innerHTML=`<h2>${texts[currentLang].genTitle}</h2><button id="gen1Btn" class="primary">${texts[currentLang].gen1}</button>`;
-  const btn = document.getElementById("gen1Btn");
-  if(btn) btn.addEventListener("click",()=>{ GameState.currentGen=1; showGenderScreen(); });
-  showScreen("screen-gen");
+  updateBodySprite();
   renderTeamAndBag();
 }
 
-function showGenderScreen() {
+/* ===========================
+   SCREENS (INÍCIO)
+=========================== */
+function renderGenScreen() {
+  const el = document.getElementById("screen-gen");
+  el.innerHTML = `
+    <h2>${texts[currentLang].genTitle}</h2>
+    <button class="primary">${texts[currentLang].gen1}</button>
+  `;
+
+  el.querySelector("button").onclick = () => {
+    GameState.currentGen = 1;
+    ScreenFlow.go(Screens.GENDER);
+  };
+
+  renderTeamAndBag();
+}
+
+function renderGenderScreen() {
   const el = document.getElementById("screen-gender");
-  if(!el) return;
-  el.innerHTML = `<h2>${texts[currentLang].genderTitle}</h2><div class="row" id="gender-row"></div>`;
-  showScreen("screen-gender");
+  el.innerHTML = `
+    <h2>${texts[currentLang].genderTitle}</h2>
+    <div class="row" id="gender-row"></div>
+  `;
 
-  const row = document.getElementById("gender-row");
-  const genders = [
-    { name: "Boy", file: "sprites/gender/boy.png" },
-    { name: "Girl", file: "sprites/gender/girl.png" }
-  ];
+  const row = el.querySelector("#gender-row");
 
-  row.innerHTML = "";
-  genders.forEach(g => {
+  ["boy", "girl"].forEach(g => {
     const div = document.createElement("div");
     div.className = "gender-option";
-    const img = document.createElement("img"); img.src=g.file; img.alt=g.name;
-    const label = document.createElement("div"); label.textContent=g.name;
-    div.appendChild(img); div.appendChild(label);
-    row.appendChild(div);
-    div.addEventListener("click", () => {
-      GameState.player.gender = g.name.toLowerCase();
+    div.innerHTML = `
+      <img src="sprites/gender/${g}.png">
+      <div>${g}</div>
+    `;
+
+    div.onclick = () => {
+      GameState.player.gender = g;
       updateBodySprite();
-      showStarterScreen();
-    });
+      ScreenFlow.go(Screens.STARTER);
+    };
+
+    row.appendChild(div);
   });
 }
 
-function showStarterScreen() {
+function renderStarterScreen() {
+  showScreen(Screens.STARTER);
+
   const el = document.getElementById("screen-starter");
-  if(!el) return;
-  el.innerHTML = `<h2>${texts[currentLang].starterTitle}</h2><div class="row" id="starters-row"></div>`;
-  const row = document.getElementById("starters-row");
-  row.innerHTML = "";
+  el.innerHTML = `
+    <h2>${texts[currentLang].starterTitle}</h2>
+    <div class="row" id="starters-row"></div>
+  `;
+
+  const row = el.querySelector("#starters-row");
 
   STARTERS.forEach(s => {
-    const card = document.createElement("div"); card.className="card";
-    const img = document.createElement("img"); img.src=`sprites/pokemon/${s.id}.png`; img.alt=s.name;
-    const title = document.createElement("div"); title.className="title"; title.textContent=s.name;
-    const btn = document.createElement("button");
-    btn.textContent = currentLang === "pt" ? "Escolher" : "Choose";
-    btn.addEventListener("click", async () => {
-      const poke = { ...s }; 
-      try {
-        const chance = 0.01; 
-        const result = await openShinyRoulette({ chance, title: texts[currentLang].shinyTitle });
-        if (result && result.isShiny) poke.shiny = true;
-        GameState.player.party.push(poke);
-        renderTeamAndBag();
-        if (poke.shiny) {
-          const shinySound = document.getElementById("shiny-sound");
-          try { shinySound?.play(); } catch(_) {}
-        }
-        showFinalScreen();
-      } catch (err) {
-        console.log("Shiny roulette cancelled or failed:", err && err.message);
-      }
-    });
-    card.appendChild(img); card.appendChild(title); card.appendChild(btn);
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <img src="sprites/pokemon/${s.id}.png">
+      <div class="title">${s.name}</div>
+      <button type="button">${texts[currentLang].choose}</button>
+    `;
+
+    card.querySelector("button")
+      .addEventListener("click", () => onStarterChosen(s));
+
     row.appendChild(card);
   });
-  showScreen("screen-starter");
 }
 
-/* ---------------------------
-   Reusable Shiny Roulette (Promise-based, no cancel)
---------------------------- */
+/* ===========================
+   STARTER → ROULETTE → NAVEGAÇÃO
+=========================== */
+async function onStarterChosen(starter) {
+  const poke = { ...starter };
+
+  const result = await openShinyRoulette({
+    chance: 0.01,
+    title: texts[currentLang].shinyTitle
+  });
+
+  if (result?.isShiny) {
+    poke.shiny = true;
+    document.getElementById("shiny-sound")?.play().catch(() => {});
+  }
+
+  GameState.player.party.push(poke);
+  renderTeamAndBag();
+
+  // 🔥 A ÚNICA MUDANÇA DE FLUXO
+  await goToLocation("pallet-town");
+}
+
+/* ===========================
+   NAVEGAÇÃO (NOVO SISTEMA)
+=========================== */
+async function loadLocation(id) {
+  const res = await fetch(`data/locations/${id}.json`);
+  if (!res.ok) throw new Error("Location not found: " + id);
+  return await res.json();
+}
+
+async function goToLocation(id) {
+  const location = await loadLocation(id);
+
+  GameState.world.currentLocationId = id;
+  GameState.world.visited.add(id);
+
+  showLocationActions(location);
+}
+
+function createActionBtn(label, onClick) {
+  const btn = document.createElement("button");
+  btn.className = "primary";
+  btn.textContent = label;
+  btn.onclick = onClick;
+  return btn;
+}
+
+function showLocationActions(location) {
+  const el = document.getElementById("screen-location-actions");
+  el.innerHTML = `<h2>${location.name[currentLang]}</h2>`;
+
+  const row = document.createElement("div");
+  row.className = "row";
+
+  if (location.features.wildPokemon)
+    row.appendChild(createActionBtn(texts[currentLang].wild, () => console.log("wild")));
+
+  if (location.features.fishing)
+    row.appendChild(createActionBtn(texts[currentLang].fishing, () => console.log("fishing")));
+
+  if (location.features.gym)
+    row.appendChild(createActionBtn(texts[currentLang].gym, () => console.log("gym")));
+
+  if (location.features.pokecenter)
+    row.appendChild(createActionBtn(texts[currentLang].pokecenter, () => console.log("pokecenter")));
+
+  if (location.features.pokemart)
+    row.appendChild(createActionBtn(texts[currentLang].pokemart, () => console.log("pokemart")));
+
+  if (location.connections?.length)
+    row.appendChild(createActionBtn(texts[currentLang].move, () => showMoveOptions(location)));
+
+  el.appendChild(row);
+  showScreen(Screens.LOCATION);
+}
+
+async function showMoveOptions(location) {
+  const el = document.getElementById("screen-location-actions");
+  el.innerHTML = `<h2>${texts[currentLang].where}</h2>`;
+
+  const row = document.createElement("div");
+  row.className = "row";
+
+  for (const id of location.connections) {
+    const target = await loadLocation(id);
+    row.appendChild(createActionBtn(
+      target.name[currentLang],
+      () => goToLocation(id)
+    ));
+  }
+
+  el.appendChild(row);
+}
+
+/* ===========================
+   SHINY ROULETTE
+=========================== */
+/* ===========================
+   SHINY ROULETTE
+=========================== */
 function openShinyRoulette({ chance = 0.01, title = null } = {}) {
   return new Promise((resolve) => {
+
+    /* ================= UI ================= */
     const overlay = document.createElement("div");
-    overlay.style.position = "fixed";
-    overlay.style.inset = "0";
-    overlay.style.display = "flex";
-    overlay.style.alignItems = "center";
-    overlay.style.justifyContent = "center";
-    overlay.style.background = "rgba(0,0,0,0.45)";
-    overlay.style.zIndex = 9999;
+    overlay.style.cssText = `
+      position:fixed; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(0,0,0,.45); z-index:9999;
+    `;
 
     const panel = document.createElement("div");
-    panel.style.width = "480px";
-    panel.style.maxWidth = "95%";
-    panel.style.background = "var(--card, #fff)";
-    panel.style.borderRadius = "12px";
-    panel.style.padding = "16px";
-    panel.style.boxShadow = "0 16px 40px rgba(0,0,0,0.4)";
-    panel.style.textAlign = "center";
-    panel.style.color = "var(--text, #111)";
+    panel.style.cssText = `
+      width:480px; max-width:95%;
+      background:#fff; border-radius:12px;
+      padding:16px; text-align:center;
+      box-shadow:0 16px 40px rgba(0,0,0,.4);
+    `;
     overlay.appendChild(panel);
 
-    const h2 = document.createElement("h2");
-    h2.style.margin = "0 0 12px 0";
-    h2.textContent = title || texts[currentLang].shinyTitle || "Shiny?";
-    panel.appendChild(h2);
+    panel.innerHTML = `<h2>${title || texts[currentLang].shinyTitle}</h2>`;
 
     const wrapper = document.createElement("div");
     wrapper.style.position = "relative";
-    wrapper.style.display = "inline-block";
     panel.appendChild(wrapper);
 
     const canvas = document.createElement("canvas");
     canvas.width = 420;
     canvas.height = 420;
-    canvas.style.display = "block";
-    canvas.style.background = "transparent";
     wrapper.appendChild(canvas);
 
     const pointer = document.createElement("div");
-    pointer.style.position = "absolute";
-    pointer.style.top = "0px";
-    pointer.style.left = "50%";
-    pointer.style.transform = "translateX(-50%)";
-    pointer.style.width = "0";
-    pointer.style.height = "0";
-    pointer.style.borderLeft = "14px solid transparent";
-    pointer.style.borderRight = "14px solid transparent";
-    pointer.style.borderTop = "26px solid rgb(228,56,56)";
-    pointer.style.transformOrigin = "center top";
+    pointer.style.cssText = `
+      position:absolute; top:0; left:50%;
+      transform:translateX(-50%);
+      width:0; height:0;
+      border-left:14px solid transparent;
+      border-right:14px solid transparent;
+      border-top:26px solid rgb(228,56,56);
+    `;
     wrapper.appendChild(pointer);
 
     const btn = document.createElement("button");
     btn.className = "primary";
-    btn.textContent = texts[currentLang].spin || (currentLang === "pt" ? "Girar" : "Spin");
+    btn.textContent = texts[currentLang].spin;
     btn.style.marginTop = "12px";
     panel.appendChild(btn);
 
     document.body.appendChild(overlay);
 
-    // slices
+    /* ================= AUDIO ================= */
+    const baseTick = document.getElementById("tick-sound");
+    const tickPool = [baseTick, baseTick.cloneNode(), baseTick.cloneNode()];
+    let tickIdx = 0;
+
+    function playTick() {
+      const a = tickPool[tickIdx];
+      a.currentTime = 0;
+      a.play().catch(() => {});
+      tickIdx = (tickIdx + 1) % tickPool.length;
+    }
+
+    /* ================= SLICES ================= */
     const slices = [
       { label: "Yes", weight: chance, color: "#f0c040" },
-      { label: "No",  weight: Math.max(0, 1 - chance), color: "#cfd8dc" }
+      { label: "No",  weight: 1 - chance, color: "#cfd8dc" }
     ];
-    const totalWeight = slices.reduce((s, x) => s + x.weight, 0) || 1;
-
-    let start = -Math.PI / 2;
-    for (let sl of slices) {
-      const angle = (sl.weight / totalWeight) * 2 * Math.PI;
-      sl.start = start;
-      sl.end = start + angle;
-      sl.mid = (sl.start + sl.end) / 2;
-      start += angle;
-    }
 
     const ctx = canvas.getContext("2d");
     const center = canvas.width / 2;
     const radius = center - 16;
 
-    function draw(rotationRad = 0) {
+    let cursor = -Math.PI / 2;
+    slices.forEach(s => {
+      const size = s.weight * Math.PI * 2;
+      s.start = cursor;
+      s.end = cursor + size;
+      cursor += size;
+    });
+
+    function draw(rot) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let sl of slices) {
+
+      slices.forEach(s => {
         ctx.beginPath();
         ctx.moveTo(center, center);
-        ctx.arc(center, center, radius, sl.start + rotationRad, sl.end + rotationRad);
+        ctx.arc(center, center, radius, s.start + rot, s.end + rot);
         ctx.closePath();
-        ctx.fillStyle = sl.color;
+        ctx.fillStyle = s.color;
         ctx.fill();
         ctx.strokeStyle = "#333";
         ctx.lineWidth = 2;
         ctx.stroke();
 
-        // texto perto da borda (traduzido)
-        const midRot = sl.mid + rotationRad;
-        const textRadius = radius - 18;
-        const x = center + textRadius * Math.cos(midRot);
-        const y = center + textRadius * Math.sin(midRot);
+        const mid = (s.start + s.end) / 2 + rot;
+        const textRadius = radius - 26;
+        const x = center + Math.cos(mid) * textRadius;
+        const y = center + Math.sin(mid) * textRadius;
 
         ctx.save();
         ctx.translate(x, y);
-        let ang = (midRot + 2 * Math.PI) % (2 * Math.PI);
-        if (ang > Math.PI / 2 && ang < 3 * Math.PI / 2) ctx.rotate(midRot + Math.PI);
-        else ctx.rotate(midRot);
 
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
+        let ang = mid % (Math.PI * 2);
+        if (ang > Math.PI / 2 && ang < 3 * Math.PI / 2) {
+          ctx.rotate(mid + Math.PI);
+        } else {
+          ctx.rotate(mid);
+        }
+
         ctx.fillStyle = "#111";
         ctx.font = "bold 14px Arial";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
 
-        const labelToShow =
-          (sl.label === "Yes" || sl.label === "Shiny") ? texts[currentLang].yes
-            : (sl.label === "No" || sl.label === "Normal") ? texts[currentLang].no
-            : sl.label;
+        const text =
+          s.label === "Yes" ? texts[currentLang].yes :
+          s.label === "No"  ? texts[currentLang].no  :
+          s.label;
 
-        ctx.fillText(labelToShow, 0, 0);
+        ctx.fillText(text, 0, 0);
         ctx.restore();
-      }
+      });
 
-      // círculo central
       ctx.beginPath();
-      ctx.arc(center, center, 44, 0, Math.PI * 2);
+      ctx.arc(center, center, 42, 0, Math.PI * 2);
       ctx.fillStyle = "#fff";
       ctx.fill();
       ctx.strokeStyle = "#ddd";
@@ -370,177 +488,116 @@ function openShinyRoulette({ chance = 0.01, title = null } = {}) {
 
     draw(0);
 
-    // audio pool
-    const baseTick = document.getElementById("tick-sound");
-    const baseShiny = document.getElementById("shiny-sound");
-    const poolSize = 3;
-    const tickPool = [];
-    for (let i = 0; i < poolSize; i++) {
-      try {
-        const a = baseTick.cloneNode();
-        a.preload = "auto";
-        tickPool.push(a);
-      } catch (e) {
-        tickPool.push(baseTick);
-      }
-    }
-    let tickIdx = 0;
-    function playTick() {
-      try {
-        const a = tickPool[tickIdx] || baseTick;
-        a.currentTime = 0;
-        a.play().catch(()=>{});
-        tickIdx = (tickIdx + 1) % tickPool.length;
-      } catch (e) {
-        try { baseTick.currentTime = 0; baseTick.play().catch(()=>{}); } catch(_) {}
-      }
-    }
+    /* ================= SLICE DETECTION ================= */
+    function getSliceIndex(rot) {
+      let angle = (-Math.PI / 2 - rot) % (Math.PI * 2);
+      if (angle < 0) angle += Math.PI * 2;
 
-    // logic
-    let spinning = false;
-    let lastIdx = -1;
-    const SMALL_SLICE_THRESHOLD = 0.08;
-    const smallPlayed = new Set();
-
-    function sliceIndexAtPointer(rotationRad) {
-      const pointerAngle = -Math.PI / 2;
-      let adjusted = (pointerAngle - rotationRad) % (2 * Math.PI);
-      if (adjusted < 0) adjusted += 2 * Math.PI;
       for (let i = 0; i < slices.length; i++) {
-        const s = (slices[i].start % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
-        const e = (slices[i].end % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
-        if (s < e) {
-          if (adjusted >= s && adjusted < e) return i;
+        const s = slices[i];
+        let a = s.start % (Math.PI * 2);
+        let b = s.end % (Math.PI * 2);
+        if (a < 0) a += Math.PI * 2;
+        if (b < 0) b += Math.PI * 2;
+
+        if (a < b) {
+          if (angle >= a && angle < b) return i;
         } else {
-          if (adjusted >= s || adjusted < e) return i;
+          if (angle >= a || angle < b) return i;
         }
       }
       return 0;
     }
 
-    function animatePointerHit() {
-      pointer.style.transition = "transform 90ms ease-out";
-      pointer.style.transform = "translateX(-50%) rotate(-18deg)";
-      setTimeout(() => {
-        pointer.style.transform = "translateX(-50%) rotate(0deg)";
-      }, 110);
-    }
+    /* ================= ANIMATION ================= */
+    let lastSliceIndex = null;
+    let lastRot = 0;
+    let tickedThisFrame = false;
 
-    function cleanup() {
-      try { overlay.remove(); } catch (e) {}
-    }
-
-    function spin() {
-      if (spinning) return;
-      spinning = true;
-      lastIdx = -1;
-      smallPlayed.clear();
+    btn.onclick = () => {
       btn.disabled = true;
 
-      const isShinyRoll = Math.random() < chance;
-      const targetIndex = isShinyRoll ? slices.findIndex(s => s.label === "Yes") : slices.findIndex(s => s.label === "No");
-      const targetSlice = slices[targetIndex];
+      const isShiny = Math.random() < chance;
+      const target = slices[isShiny ? 0 : 1];
+      const targetAngle =
+        target.start + Math.random() * (target.end - target.start);
 
-      const targetAngleWithin = targetSlice.start + Math.random() * (targetSlice.end - targetSlice.start);
-      const pointerAngle = -Math.PI / 2;
-      let baseRot = pointerAngle - targetAngleWithin;
-      baseRot = ((baseRot % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+      const spins = 5;
+      const finalRot =
+        spins * Math.PI * 2 + (-Math.PI / 2 - targetAngle);
 
-      const extraSpins = 4 + Math.floor(Math.random() * 4);
-      const totalRotation = extraSpins * 2 * Math.PI + baseRot;
-      const duration = 2500 + Math.floor(Math.random() * 1800);
+      const duration = 2600;
       const startTime = performance.now();
 
-      function step(now) {
+      function animate(now) {
+        tickedThisFrame = false;
+
         const t = Math.min(1, (now - startTime) / duration);
         const eased = 1 - Math.pow(1 - t, 3);
-        const currentRotation = eased * totalRotation;
-        draw(currentRotation);
+        const rot = eased * finalRot;
 
-        const idx = sliceIndexAtPointer(currentRotation);
-        const sliceSize = Math.abs(slices[idx].end - slices[idx].start);
+        const STEP = Math.PI / 180;
+        const delta = rot - lastRot;
+        const steps = Math.max(1, Math.ceil(Math.abs(delta) / STEP));
+        const stepRot = delta / steps;
 
-        if (idx !== lastIdx) {
-          lastIdx = idx;
-          if (sliceSize < SMALL_SLICE_THRESHOLD) {
-            if (!smallPlayed.has(idx)) {
-              smallPlayed.add(idx);
+        for (let i = 1; i <= steps; i++) {
+          const testRot = lastRot + stepRot * i;
+          const idx = getSliceIndex(testRot);
+
+          if (lastSliceIndex === null) {
+            lastSliceIndex = idx;
+          } else if (idx !== lastSliceIndex) {
+            if (!tickedThisFrame) {
               playTick();
+              tickedThisFrame = true;
             }
-          } else {
-            playTick();
-          }
-          animatePointerHit();
-        } else {
-          if (sliceSize < SMALL_SLICE_THRESHOLD && !smallPlayed.has(idx)) {
-            smallPlayed.add(idx);
-            playTick();
-            animatePointerHit();
+            lastSliceIndex = idx;
           }
         }
 
-        if (t < 1) requestAnimationFrame(step);
-        else {
-          spinning = false;
-          btn.disabled = false;
-          const finalIdx = sliceIndexAtPointer(totalRotation);
-          const finalLabel = slices[finalIdx].label;
-          const isShiny = (finalLabel === "Yes");
-          try { if (isShiny && baseShiny) baseShiny.play().catch(()=>{}); } catch (e) {}
-          setTimeout(() => {
-            cleanup();
-            resolve({ isShiny, label: finalLabel });
-          }, 250);
+        lastRot = rot;
+        draw(rot);
+
+        if (t < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          overlay.remove();
+          resolve({ isShiny });
         }
       }
 
-      requestAnimationFrame(step);
-    }
-
-    btn.addEventListener("click", spin);
+      requestAnimationFrame(animate);
+    };
   });
 }
 
-/* ---------------------------
-   FINAL SCREEN
---------------------------- */
-function showFinalScreen() {
-  const el = document.getElementById("screen-final");
-  if(!el) return;
-  el.innerHTML = `
-    <h2>${texts[currentLang].finalTitle}</h2>
-    <p>${texts[currentLang].finalText}</p>
-    <button class="primary" id="restartBtn">${texts[currentLang].restart}</button>
-  `;
-  showScreen("screen-final");
-  const r = document.getElementById("restartBtn");
-  if (r) r.addEventListener("click", ()=> location.reload());
-}
 
-/* ---------------------------
+/* ===========================
    LANGUAGE TOGGLE
---------------------------- */
+=========================== */
 const langToggle = document.getElementById("language-toggle");
 const langFlag = document.getElementById("lang-flag");
 
-if (langToggle && langFlag) {
-  langToggle.addEventListener("click", () => {
-    const next = currentLang === "pt" ? "en" : "pt";
-    setLanguage(next);
-    langFlag.src = currentLang === "pt" ? "assets/ui/brLanguage.png" : "assets/ui/enLanguage.png";
-    updateTexts();
-  });
-}
+langToggle?.addEventListener("click", () => {
+  const next = currentLang === "pt" ? "en" : "pt";
+  setLanguage(next);
 
-/* ---------------------------
+  if (langFlag) {
+    langFlag.src = next === "pt"
+      ? "assets/ui/brLanguage.png"
+      : "assets/ui/enLanguage.png";
+  }
+
+  const target = ScreenFlow.current || Screens.GEN;
+  ScreenFlow.go(target);
+});
+
+/* ===========================
    BOOT
---------------------------- */
+=========================== */
 document.addEventListener("DOMContentLoaded", () => {
-  const lang = getLanguage();
-  currentLang = lang;
-  const lf = document.getElementById("lang-flag");
-  if (lf) lf.src = currentLang === "pt" ? "assets/ui/brLanguage.png" : "assets/ui/enLanguage.png";
-  updateTexts();
-  initGenScreen();
-  renderTeamAndBag();
+  currentLang = getLanguage();
+  resetGameState();
+  ScreenFlow.go(Screens.GEN);
 });

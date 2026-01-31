@@ -1,0 +1,19 @@
+{
+  "id": "one-island",
+  "name": {
+    "en": "One Island",
+    "pt": "One Island"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

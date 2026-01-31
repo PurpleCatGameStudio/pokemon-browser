@@ -1,0 +1,366 @@
+{
+  "id": "power-plant",
+  "name": {
+    "en": "Power Plant",
+    "pt": "Power Plant"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "pikachu",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 15
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 15
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "raichu",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 4
+      },
+      {
+        "pokemon": "raichu",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 1
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 20
+      },
+      {
+        "pokemon": "magnemite",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 20
+      },
+      {
+        "pokemon": "magneton",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 5
+      },
+      {
+        "pokemon": "magneton",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 5
+      },
+      {
+        "pokemon": "magneton",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 5
+      },
+      {
+        "pokemon": "magneton",
+        "minLevel": 35,
+        "maxLevel": 35,
+        "chance": 5
+      },
+      {
+        "pokemon": "magneton",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 15
+      },
+      {
+        "pokemon": "magneton",
+        "minLevel": 38,
+        "maxLevel": 38,
+        "chance": 5
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "grimer",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 5
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 4
+      },
+      {
+        "pokemon": "muk",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 1
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 37,
+        "maxLevel": 37,
+        "chance": 10
+      },
+      {
+        "pokemon": "electabuzz",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 4
+      },
+      {
+        "pokemon": "electabuzz",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 1
+      }
+    ],
+    "only-one": [
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "voltorb",
+        "minLevel": 40,
+        "maxLevel": 40,
+        "chance": 100
+      },
+      {
+        "pokemon": "electrode",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 100
+      },
+      {
+        "pokemon": "electrode",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 100
+      },
+      {
+        "pokemon": "electrode",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 100
+      },
+      {
+        "pokemon": "electrode",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 100
+      },
+      {
+        "pokemon": "electrode",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 100
+      },
+      {
+        "pokemon": "electrode",
+        "minLevel": 43,
+        "maxLevel": 43,
+        "chance": 100
+      },
+      {
+        "pokemon": "zapdos",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      },
+      {
+        "pokemon": "zapdos",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      },
+      {
+        "pokemon": "zapdos",
+        "minLevel": 50,
+        "maxLevel": 50,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "seven-island",
+  "name": {
+    "en": "Seven Island",
+    "pt": "Seven Island"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

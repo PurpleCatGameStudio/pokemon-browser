@@ -1,0 +1,922 @@
+{
+  "id": "pokemon-tower",
+  "name": {
+    "en": "Pokémon Tower",
+    "pt": "Pokémon Tower"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 5
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 1
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 1
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 1
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 1
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 1
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 5
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 1
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 1
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 1
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 1
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 5
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 1
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 4
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 4
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 15
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "gastly",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 5
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 1
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 1
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 4
+      },
+      {
+        "pokemon": "haunter",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 1
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

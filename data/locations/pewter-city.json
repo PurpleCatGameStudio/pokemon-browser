@@ -1,0 +1,19 @@
+{
+  "id": "pewter-city",
+  "name": {
+    "en": "Pewter City",
+    "pt": "Pewter City"
+  },
+  "type": "city",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "kindle-road",
+  "name": {
+    "en": "Kindle Road",
+    "pt": "Kindle Road"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

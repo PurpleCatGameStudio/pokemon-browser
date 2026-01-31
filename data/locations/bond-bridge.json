@@ -1,0 +1,19 @@
+{
+  "id": "bond-bridge",
+  "name": {
+    "en": "Bond Bridge",
+    "pt": "Bond Bridge"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

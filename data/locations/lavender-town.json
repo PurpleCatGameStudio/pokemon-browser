@@ -1,0 +1,19 @@
+{
+  "id": "lavender-town",
+  "name": {
+    "en": "Lavender Town",
+    "pt": "Lavender Town"
+  },
+  "type": "city",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

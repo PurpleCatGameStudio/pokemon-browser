@@ -1,0 +1,222 @@
+{
+  "id": "kanto-route-16",
+  "name": {
+    "en": "Route 16",
+    "pt": "Route 16"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "rattata",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 15
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 15
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "rattata",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 4
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 1
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 4
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 1
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 4
+      },
+      {
+        "pokemon": "raticate",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 1
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "spearow",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 5
+      },
+      {
+        "pokemon": "fearow",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 10
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      }
+    ],
+    "pokeflute": [
+      {
+        "pokemon": "snorlax",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "snorlax",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      },
+      {
+        "pokemon": "snorlax",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

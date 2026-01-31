@@ -1,0 +1,1348 @@
+{
+  "id": "kanto-safari-zone",
+  "name": {
+    "en": "Safari Zone",
+    "pt": "Safari Zone"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 14,
+        "maxLevel": 14,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 5
+      },
+      {
+        "pokemon": "parasect",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "parasect",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "parasect",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "parasect",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 5
+      },
+      {
+        "pokemon": "venonat",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "venonat",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 15
+      },
+      {
+        "pokemon": "rhyhorn",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "rhyhorn",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "rhyhorn",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "chansey",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 1
+      },
+      {
+        "pokemon": "chansey",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 1
+      },
+      {
+        "pokemon": "chansey",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 1
+      },
+      {
+        "pokemon": "tangela",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 4
+      },
+      {
+        "pokemon": "scyther",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 4
+      },
+      {
+        "pokemon": "pinsir",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 4
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "parasect",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "parasect",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "marowak",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "chansey",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 4
+      },
+      {
+        "pokemon": "kangaskhan",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 4
+      },
+      {
+        "pokemon": "kangaskhan",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 4
+      },
+      {
+        "pokemon": "scyther",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "scyther",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 1
+      },
+      {
+        "pokemon": "pinsir",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "tauros",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 14,
+        "maxLevel": 14,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 36,
+        "maxLevel": 36,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 30,
+        "maxLevel": 30,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "venomoth",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 5
+      },
+      {
+        "pokemon": "venomoth",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 5
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 15
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 5
+      },
+      {
+        "pokemon": "rhyhorn",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "rhyhorn",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "rhyhorn",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 10
+      },
+      {
+        "pokemon": "chansey",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 4
+      },
+      {
+        "pokemon": "chansey",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 4
+      },
+      {
+        "pokemon": "kangaskhan",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 10
+      },
+      {
+        "pokemon": "kangaskhan",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 5
+      },
+      {
+        "pokemon": "scyther",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 4
+      },
+      {
+        "pokemon": "pinsir",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 1
+      },
+      {
+        "pokemon": "tauros",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "tauros",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-f",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorina",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 5
+      },
+      {
+        "pokemon": "nidoran-m",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 20
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 33,
+        "maxLevel": 33,
+        "chance": 10
+      },
+      {
+        "pokemon": "nidorino",
+        "minLevel": 32,
+        "maxLevel": 32,
+        "chance": 10
+      },
+      {
+        "pokemon": "venonat",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "venonat",
+        "minLevel": 23,
+        "maxLevel": 23,
+        "chance": 15
+      },
+      {
+        "pokemon": "venomoth",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "venomoth",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 5
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "doduo",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 20
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 10
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 15
+      },
+      {
+        "pokemon": "exeggcute",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 5
+      },
+      {
+        "pokemon": "cubone",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 10
+      },
+      {
+        "pokemon": "marowak",
+        "minLevel": 24,
+        "maxLevel": 24,
+        "chance": 5
+      },
+      {
+        "pokemon": "tangela",
+        "minLevel": 27,
+        "maxLevel": 27,
+        "chance": 1
+      },
+      {
+        "pokemon": "kangaskhan",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "kangaskhan",
+        "minLevel": 28,
+        "maxLevel": 28,
+        "chance": 1
+      },
+      {
+        "pokemon": "pinsir",
+        "minLevel": 25,
+        "maxLevel": 25,
+        "chance": 4
+      },
+      {
+        "pokemon": "tauros",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 4
+      },
+      {
+        "pokemon": "tauros",
+        "minLevel": 26,
+        "maxLevel": 26,
+        "chance": 4
+      },
+      {
+        "pokemon": "tauros",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 10
+      }
+    ],
+    "super-rod": [
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 40
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 30
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 20
+      },
+      {
+        "pokemon": "dragonair",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 40
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 30
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 20
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 40
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 30
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 20
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "psyduck",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "slowpoke",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 8
+      },
+      {
+        "pokemon": "krabby",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 17
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 40
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 30
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 20
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 25
+      },
+      {
+        "pokemon": "dratini",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      }
+    ],
+    "good-rod": [
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "poliwag",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      },
+      {
+        "pokemon": "goldeen",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 50
+      }
+    ],
+    "old-rod": [
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      },
+      {
+        "pokemon": "magikarp",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 100
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

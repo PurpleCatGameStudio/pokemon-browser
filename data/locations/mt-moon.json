@@ -1,0 +1,562 @@
+{
+  "id": "mt-moon",
+  "name": {
+    "en": "Mt. Moon",
+    "pt": "Mt. Moon"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "sandshrew",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 4
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 1
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 1
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 1
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 4
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 4
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 5
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 15
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 4
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 4
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 4
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 1
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 5
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 5
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 5
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 15
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 1
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 7,
+        "maxLevel": 7,
+        "chance": 15
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 1
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 1
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 5
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 1
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 5
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 4
+      },
+      {
+        "pokemon": "clefairy",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 1
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 4
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 15
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 4
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 20
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 10
+      },
+      {
+        "pokemon": "zubat",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 12,
+        "maxLevel": 12,
+        "chance": 5
+      },
+      {
+        "pokemon": "paras",
+        "minLevel": 13,
+        "maxLevel": 13,
+        "chance": 15
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 20
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 10,
+        "maxLevel": 10,
+        "chance": 10
+      },
+      {
+        "pokemon": "geodude",
+        "minLevel": 11,
+        "maxLevel": 11,
+        "chance": 20
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

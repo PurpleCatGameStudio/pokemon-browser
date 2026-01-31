@@ -1,0 +1,202 @@
+{
+  "id": "digletts-cave",
+  "name": {
+    "en": "Diglett's Cave",
+    "pt": "Diglett's Cave"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "diglett",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 20
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 15
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 5
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 20
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 15
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 5
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 18,
+        "maxLevel": 18,
+        "chance": 20
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 19,
+        "maxLevel": 19,
+        "chance": 20
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 17,
+        "maxLevel": 17,
+        "chance": 15
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 20,
+        "maxLevel": 20,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 16,
+        "maxLevel": 16,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 15,
+        "maxLevel": 15,
+        "chance": 10
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 21,
+        "maxLevel": 21,
+        "chance": 5
+      },
+      {
+        "pokemon": "diglett",
+        "minLevel": 22,
+        "maxLevel": 22,
+        "chance": 5
+      },
+      {
+        "pokemon": "dugtrio",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 4
+      },
+      {
+        "pokemon": "dugtrio",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 1
+      },
+      {
+        "pokemon": "dugtrio",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 4
+      },
+      {
+        "pokemon": "dugtrio",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 1
+      },
+      {
+        "pokemon": "dugtrio",
+        "minLevel": 29,
+        "maxLevel": 29,
+        "chance": 4
+      },
+      {
+        "pokemon": "dugtrio",
+        "minLevel": 31,
+        "maxLevel": 31,
+        "chance": 1
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

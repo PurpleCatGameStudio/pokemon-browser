@@ -1,0 +1,19 @@
+{
+  "id": "ss-anne",
+  "name": {
+    "en": "S.S. Anne",
+    "pt": "S.S. Anne"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}

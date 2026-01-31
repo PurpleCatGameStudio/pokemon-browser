@@ -1,0 +1,202 @@
+{
+  "id": "viridian-forest",
+  "name": {
+    "en": "Viridian Forest",
+    "pt": "Viridian Forest"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": true,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {
+    "walk": [
+      {
+        "pokemon": "caterpie",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 5
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 20
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 15
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 10
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 20
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 15
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 10
+      },
+      {
+        "pokemon": "caterpie",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 5
+      },
+      {
+        "pokemon": "metapod",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 5
+      },
+      {
+        "pokemon": "metapod",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 20
+      },
+      {
+        "pokemon": "metapod",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 10
+      },
+      {
+        "pokemon": "metapod",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 10
+      },
+      {
+        "pokemon": "metapod",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 20
+      },
+      {
+        "pokemon": "metapod",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 5
+      },
+      {
+        "pokemon": "weedle",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 20
+      },
+      {
+        "pokemon": "weedle",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 15
+      },
+      {
+        "pokemon": "weedle",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 10
+      },
+      {
+        "pokemon": "weedle",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 5
+      },
+      {
+        "pokemon": "kakuna",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 20
+      },
+      {
+        "pokemon": "kakuna",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 10
+      },
+      {
+        "pokemon": "kakuna",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 10
+      },
+      {
+        "pokemon": "kakuna",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 5
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 4,
+        "maxLevel": 4,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 6,
+        "maxLevel": 6,
+        "chance": 10
+      },
+      {
+        "pokemon": "pidgey",
+        "minLevel": 8,
+        "maxLevel": 8,
+        "chance": 4
+      },
+      {
+        "pokemon": "pidgeotto",
+        "minLevel": 9,
+        "maxLevel": 9,
+        "chance": 1
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 4
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 1
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 3,
+        "maxLevel": 3,
+        "chance": 4
+      },
+      {
+        "pokemon": "pikachu",
+        "minLevel": 5,
+        "maxLevel": 5,
+        "chance": 1
+      }
+    ]
+  },
+  "connections": [],
+  "npcs": []
+}

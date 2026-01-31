@@ -53,7 +53,7 @@ for (const species of genJson.pokemon_species) {
       }
     }
 
-    // --- Download shiny sprite ---
+    // --- Download shiny sprite --- 
     const shinySpriteUrl = pJson.sprites.front_shiny
       || (pJson.sprites.other && pJson.sprites.other["official-artwork"] && pJson.sprites.other["official-artwork"].front_default);
 

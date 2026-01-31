@@ -1,0 +1,19 @@
+{
+  "id": "berry-forest",
+  "name": {
+    "en": "Berry Forest",
+    "pt": "Berry Forest"
+  },
+  "type": "route",
+  "features": {
+    "wildPokemon": false,
+    "fishing": false,
+    "gym": false,
+    "pokecenter": false,
+    "pokemart": false,
+    "npcs": false
+  },
+  "wildEncounters": {},
+  "connections": [],
+  "npcs": []
+}
